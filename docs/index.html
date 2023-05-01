@@ -1,30 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Fingerprint Password Manager</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-
-<h1>Fingerprint Password Manager</h1>
-
-<p><img src="/fingerprint-scanner-arduino/docs/assets/images/repository-open-graph.png" alt="Project Image" /></p>
-<p><img src="/least-github-pages/assets/github-pages-upload-pages-512x1024.png" alt="Screenshot of uploading a file to the /docs/assets directory" /></p>  
-<p>Fingerprint scanner used to automatically send stored passwords to a PC USB keyboard. Uses fingerprint scan module AS608 from Adafruit and Arduino Pro Micro, 3.3 Volt, 8 MHz version. Do not use the 5 Volt Pro Micro with the 3.3 Volt fingerprint scanner.</p>
-  <p><h2>Hardware</h2>
-The hardware consists of an AS608 fingerprint scanner and Arduino Pro Micro board, 3.3 Volt, 8 MHz version. Four connections between the Arduino and fingerprint scanner are required. The hardware is powered by the Arduino's USB connection to the host PC. The Arduino USB connection has serial communication functionality and also appears to the host PC as a USB keyboard.</p>
-  <p><h2>Firmware</h2>
-By default, the firmware waits for a valid fingerprint and sends the password associated with the particular fingerprint to the keyboard. After initial setup, the hardware may be left plugged in to the PC's USB port. Instead of typing, the unit sends the long, secure password, up to 63 characters, to the USB keyboard based on the recognized fingerprint.
-
-Initial setup is done through serial communication wth the device using a terminal program such as PuTTY. The user's fingerprints and asscoiated passwords can be enrolled using the serial port only. A seperate application such as the one under the Python folder here or the SFG Demo Windows application may also be used to enroll fingerprint models by placing the device in passthru mode allowing direct access to the AS608 fingerprint scanner.</p>
-
-<a href="https://github.com/jim-mckeown/fingerprint-scanner-arduino">Github Repository</a>
-
-</body>
-</html>
-################################################################################
-<!DOCTYPE html>
 <html>
 <title>Fingerprint Password Manager</title>
 <meta charset="UTF-8">
