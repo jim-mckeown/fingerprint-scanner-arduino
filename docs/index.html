@@ -4,52 +4,6 @@
 <title>Fingerprint Password Manager</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
 </head>
 <body>
 
@@ -61,19 +15,6 @@ The hardware consists of an AS608 fingerprint scanner and Arduino Pro Micro boar
 By default, the firmware waits for a valid fingerprint and sends the password associated with the particular fingerprint to the keyboard. After initial setup, the hardware may be left plugged in to the PC's USB port. Instead of typing, the unit sends the long, secure password, up to 63 characters, to the USB keyboard based on the recognized fingerprint.
 
 Initial setup is done through serial communication wth the device using a terminal program such as PuTTY. The user's fingerprints and asscoiated passwords can be enrolled using the serial port only. A seperate application such as the one under the Python folder here or the SFG Demo Windows application may also be used to enroll fingerprint models by placing the device in passthru mode allowing direct access to the AS608 fingerprint scanner.</p>
-<div class="header">
-  <h2>Header</h2>
-</div>
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">Column</div>
-  <div class="column" style="background-color:#bbb;">Column</div>
-  <div class="column" style="background-color:#ccc;">Column</div>
-</div>
-
-<div class="footer">
-  <p>Footer</p>
-</div>
 
 </body>
 </html>
