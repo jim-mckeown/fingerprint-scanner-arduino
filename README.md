@@ -2,8 +2,7 @@
 Fingerprint scanner used to automatically send stored passwords to a PC USB keyboard.
 Uses fingerprint scan module AS608 from Adafruit and Arduino Pro Micro, 3.3 Volt, 8 MHz version. 
 
-![project image](/fingerprint-scanner-arduino/docs/assets/images/repository-open-graph.png)
-![Book logo](/least-github-pages/assets/logo.png)
+![project image](./images/outside.jpg)
 
 # Hardware
 The hardware consists of an AS608 fingerprint scanner and Arduino Pro Micro board, 3.3 Volt, 8 MHz version. Four connections between the Arduino and fingerprint scanner are required. The hardware is powered by the Arduino's USB connection to the host PC. The Arduino USB connection has serial communication functionality and also appears to the host PC as a USB keyboard.
